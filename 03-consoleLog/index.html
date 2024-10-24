@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quantidade no carrinho</title>
+</head>
+
+<body>
+   <button onclick="
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)">Mostrar Quantidade
+   </button>
+   
+   <button onclick="carrinhoQuantidade ++;
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)">Adicionar ao Carrinho
+   </button>
+
+   <button onclick="carrinhoQuantidade += 2;
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)"> +2
+   </button>
+   
+   <button onclick="carrinhoQuantidade += 3;
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)"> +3
+   </button>
+   
+   <button onclick="
+      carrinhoQuantidade = 0
+      console.log('Carrinho de compras foi limpo')
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)">Limpar Carrinho
+   </button>
+
+   <script>
+      const carrinhoQuantidade = 0;
+   </script>
+</body>
+
+</html>

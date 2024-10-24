@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora</title>
+</head>
+<body>
+   <p>
+      <button onclick="calculadora++; 
+         console.log(calculadora);
+         "> 1
+      </button>
+
+      <button onclick="calculadora += 2; 
+         console.log(calculadora);
+         "> 2
+      </button>
+
+      <button onclick="calculadora += 3 
+         console.log(calculadora);
+         "> 3
+      </button>
+   </p>
+
+   <p>
+      <button onclick="calculadora += ' + '; 
+         console.log(calculadora);
+         "> +
+      </button>
+
+      <button onclick=" calculadora = eval(calculadora);
+         console.log(calculadora);
+         ">=
+      </button>
+   </p>   
+
+   <script>
+      const calculadora = '';
+   </script>
+</body>
+
+</html>

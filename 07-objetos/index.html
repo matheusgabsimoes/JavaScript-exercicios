@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pedra Papel Tesoura</title>
+</head>
+
+<body>
+   <h1>Pedra Papel Tesoura</h1>
+
+   <button onclick="randomEscolha(); calcularResultado('Pedra');">
+      Pedra
+   </button>
+
+   <button onclick="randomEscolha(); calcularResultado('Papel');">
+      Papel
+   </button>
+
+   <button onclick="randomEscolha(); calcularResultado('Tesoura');">
+      Tesoura
+   </button>
+   
+   <button onclick="resetarPlacar();
+   localStorage.removeItem('placar');">Resetar Placar</button>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>

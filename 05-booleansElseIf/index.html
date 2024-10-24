@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quantidade no carrinho</title>
+</head>
+
+<body>
+   <button onclick="
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)">Mostrar Quantidade
+   </button>
+   
+   <button onclick="
+      if (carrinhoQuantidade+ 1 > carrinhoMaxQuantidade) {
+         alert('O carrinho está cheio');
+      } else {
+         carrinhoQuantidade ++;
+         console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)
+      }
+      ">Adicionar ao Carrinho
+   </button>
+
+   <button onclick="
+      if (carrinhoQuantidade + 2 > carrinhoMaxQuantidade) {
+         alert('O carrinho está cheio');
+      } else {
+         carrinhoQuantidade += 2;
+         console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)
+      }"> +2
+   </button>
+   
+   <button onclick="
+      if (carrinhoQuantidade + 3 > carrinhoMaxQuantidade) {
+         alert('O carrinho está cheio');
+      } else {
+         carrinhoQuantidade += 3;
+         console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)
+      }"> +3
+   </button>
+   
+   <button onclick="
+      carrinhoQuantidade = 0
+      console.log('Carrinho de compras foi limpo')
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)">Limpar Carrinho
+   </button>
+
+   <button onclick="
+      if (carrinhoQuantidade <= 0) {
+         alert('O carrinho já está vazio');
+      } else {
+         carrinhoQuantidade--;
+         console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)
+      }"> Remove do carrinho
+   </button>
+
+   <button onclick="
+   if (carrinhoQuantidade <= 0) {
+      alert('O carrinho já está vazio');
+   } else {
+      carrinhoQuantidade -= 2;
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)
+   }"> -2
+</button>
+
+   <button onclick="
+   if (carrinhoQuantidade <= 0) {
+      alert('O carrinho já está vazio');
+   } else {
+      carrinhoQuantidade -= 3;
+      console.log(`Quantidade no carrinho ${carrinhoQuantidade}`)
+   }"> -3
+   </button>
+
+   <script>
+      let carrinhoQuantidade = 0;
+      const carrinhoMaxQuantidade = 10;
+   </script>
+
+</body>
+
+</html>
